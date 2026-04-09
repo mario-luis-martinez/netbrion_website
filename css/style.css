@@ -1,38 +1,419 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-}
-:root {
-    /* type */
-    --ff: "Inter", sans-serif;
-    --h1: 700 2rem/1.2em var(--ff);
-    --h2: 700 1.5rem/1.4em var(--ff);
-    --h3: 700 1.25rem/1.4em var(--ff);
-    --h4: 700 1rem/1.4em var(--ff);
-    --p: 400 1rem/1.6em var(--ff);
-    --small: 400 0.75rem/1.6em var(--ff);
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-:root {
-    /* colors */
-    --bg-dark: oklch(0.1 0 264);
-    --bg: oklch(0.2 0 264);
-    --bg-light: oklch(0.3 0 264);
-    --text: oklch(0.96 0 264);
-    --text-muted: oklch(0.76 0 264);
-    --primary: oklch(0.9 0.17 100);
-    --fg: oklch(92.872% 0.14505 100.704);
-    --secondary: oklch(23.793% 0.0959 261.862);
-    --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
-    /* shadows */
-    --shadow-s:
-        inset 0 1px 2px #ffffff30, 0 1px 2px #00000030, 0 2px 4px #00000015;
-    --shadow-m:
-        inset 0 1px 2px #ffffff50, 0 2px 4px #00000030, 0 4px 8px #00000015;
-    --transition: all 0.3s ease-in-out;
+body{
+font-family:sans-serif;
+color:#0f172a;
+line-height:1.6;
+background:#ffffff;
 }
-h1{
-    font: var(--h1);
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* contenedores más estrechos para secciones específicas */
+
+.container-narrow{
+max-width:800px;
+margin:auto;
+}
+
+/* HEADER */
+
+.header{
+background:#020c1b;
+color:white;
+padding:20px 0;
+position: sticky;
+top: 0;
+z-index: 999;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.nav nav a{
+color:white;
+margin-left:25px;
+text-decoration:none;
+opacity:.8;
+transition:.2s;
+}
+
+.nav nav a:hover{
+opacity:1;
+}
+
+/* HERO */
+
+.hero{
+background: url(/src/banner.webp);
+background-repeat: no-repeat;
+background-size: cover;
+color:white;
+padding:120px 0;
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+line-height:1.2;
+}
+
+.hero span{
+color:#22c55e;
+}
+
+.hero p{
+max-width:600px;
+margin-bottom:30px;
+opacity:.8;
+}
+
+.hero-buttons{
+display:flex;
+gap:15px;
+}
+
+/* BOTONES */
+
+.btn{
+padding:14px 26px;
+border-radius:10px;
+text-decoration:none;
+display:inline-block;
+font-weight:500;
+transition:all .25s ease;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+box-shadow:0 8px 18px rgba(0,0,0,.15);
+}
+
+.btn-primary{
+background:#2563eb;
+color:white;
+}
+
+.btn-whatsapp{
+background:#22c55e;
+color:white;
+}
+
+.btn.full{
+width:100%;
+text-align:center;
+}
+
+/* PROBLEMAS */
+
+.problems{
+background:#f5f7fb;
+padding:100px 0;
+text-align:center;
+}
+
+.problems .container{
+max-width:900px;
+}
+
+.problem-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+margin-top:30px;
+}
+
+.problem{
+background:white;
+padding:14px 18px;
+border-radius:10px;
+border:1px solid #e5e7eb;
+font-size:14px;
+}
+.problem ion-icon{
+    color: red;
+}
+
+.solution{
+margin-top:25px;
+color:#2563eb;
+font-weight:600;
+}
+
+/* TITULOS SECCION */
+
+.section-tag{
+color:#22c55e;
+font-size:12px;
+letter-spacing:2px;
+display:block;
+text-align:center;
+margin-bottom:10px;
+}
+
+.services h2,
+.about h2,
+.contact h2{
+text-align:center;
+margin-bottom:50px;
+}
+
+/* SERVICES */
+
+.services{
+padding:100px 0;
+background:#ffffff;
+}
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+/* CARDS */
+
+.card{
+background:#f8fafc;
+padding:30px;
+border-radius:14px;
+border:1px solid #e5e7eb;
+box-shadow:0 4px 10px rgba(0,0,0,.04);
+transition:all .25s ease;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card h3{
+margin:15px 0 10px;
+}
+
+.card p{
+color:#64748b;
+font-size:14px;
+}
+
+/* ICONOS */
+
+.icon{
+width:46px;
+height:46px;
+border-radius:10px;
+background:#eef2ff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+color:#2563eb;
+}
+
+.card ion-icon{
+font-size:22px;
+}
+
+/* LISTAS */
+
+.card ul{
+margin-top:18px;
+padding-left:0;
+list-style:none;
+}
+
+.card li{
+display:flex;
+align-items:center;
+gap:10px;
+margin-bottom:8px;
+font-size:14px;
+color:#475569;
+}
+
+.card li::before{
+content:"";
+width:6px;
+height:6px;
+background:#22c55e;
+border-radius:50%;
+display:inline-block;
+}
+
+/* DARK SECTION */
+
+.dark-section{
+background:#020c1b;
+color:white;
+padding:100px 0;
+}
+
+.dark-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:70px;
+}
+
+.dark-section h2{
+font-size:34px;
+margin-bottom:20px;
+}
+
+.dark-section span{
+color:#34d399;
+}
+
+.checks{
+list-style:none;
+margin-top:20px;
+}
+
+.checks li{
+display:flex;
+align-items:center;
+gap:10px;
+margin-bottom:12px;
+}
+
+.checks li::before{
+content:"✓";
+color:#22c55e;
+font-weight:bold;
+}
+
+/* STEPS */
+
+.steps h3{
+margin-bottom:20px;
+}
+
+.step{
+margin:18px 0;
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.step span{
+font-size:24px;
+font-weight:bold;
+color:#22c55e;
+}
+
+/* CTA */
+
+.cta{
+margin-top:60px;
+background:#0a1f44;
+padding:50px;
+border-radius:14px;
+text-align:center;
+}
+
+.cta h3{
+margin-bottom:10px;
+}
+
+.cta p{
+opacity:.7;
+margin-bottom:20px;
+}
+
+/* ABOUT */
+
+.about{
+padding:100px 0;
+background:#f5f7fb;
+text-align:center;
+}
+
+.about .container{
+max-width:850px;
+}
+
+.about p{
+margin-bottom:15px;
+color:#475569;
+}
+
+.about strong{
+display:block;
+margin-top:20px;
+}
+
+/* CONTACT */
+
+.contact{
+padding:100px 0;
+background:#ffffff;
+text-align:center;
+}
+
+.contact-card{
+background:#f8fafc;
+padding:35px;
+border-radius:14px;
+max-width:420px;
+margin:40px auto 0;
+border:1px solid #e5e7eb;
+box-shadow:0 5px 15px rgba(0,0,0,.05);
+text-align:left;
+}
+
+.contact-card h3{
+margin-bottom:20px;
+}
+
+.contact-card p{
+display:flex;
+align-items:center;
+gap:10px;
+margin-bottom:12px;
+color:#475569;
+}
+
+/* FOOTER */
+
+.footer{
+background:#020c1b;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:60px;
+font-size:14px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:34px;
+}
+
+.dark-grid{
+grid-template-columns:1fr;
+}
+
+.hero-buttons{
+flex-direction:column;
+}
+
+.services-grid{
+grid-template-columns:1fr;
+}
+
 }

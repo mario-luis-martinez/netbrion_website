@@ -38,34 +38,59 @@
 </head>
 
 <body>
-    <header>
-        <h2 class="logo">Netbrion</h2>
-        <a href="#contacto">Contáctanos</a>
+    <header class="header">
+        <div class="container nav">
+            <div class="logo">Netbrion</div>
+            <nav>
+                <a href="#contact">Contacto</a>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section id="hero">
-            <h1>Soluciones digitales para automatizar tu negocio</h1>
-            <p>Creamos sistemas, automatizaciones y páginas web para negocios que quieren más clientes y menos trabajo
-                manual.</p>
-            <a href="" class="btn btn-primary">Escríbenos en WhatsApp</a>
-        </section>
-        <section id="issues">
-            <h2>El problema</h2>
-            <p class="title">¿Tu negocio pierde tiempo en tareas repetitivas?</p>
-            <div class="container">
-                <p class="issue">Respondes manualmente a clientes</p>
-                <p class="issue">No tienes página web</p>
-                <p class="issue">No automatizas procesos</p>
-                <p class="issue">No tienes sistema de ventas</p>
-                <p class="issue">No aprovechas la tecnología</p>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>
+                Soluciones digitales para <br>
+                <span>automatizar</span> tu negocio
+            </h1>
+            <p>
+                Creamos sistemas, automatizaciones y páginas web para negocios que
+                quieren más clientes y menos trabajo manual.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="https://wa.me/523121985181?text=Hola%20quiero%20una%20auditor%C3%ADa%20para%20mi%20negocio.%20Vengo%20desde%20su%20sitio%20web.%F0%9F%96%90%EF%B8%8F"
+                    target="_blank" class="btn btn-whatsapp"><ion-icon name="logo-whatsapp"></ion-icon> Enviar
+                    WhatsApp</a>
             </div>
-            <h3>Nosotros lo solucionamos.</h3>
-        </section>
-        <section id="services">
-            <h2>Servicios</h2>
-            <p class="title">Lo que hacemos por tu negocio</p>
-            <div class="container">
+        </div>
+    </section>
+
+    <section class="problems">
+        <div class="container">
+            <h2>¿Tu negocio pierde tiempo en tareas repetitivas?</h2>
+
+            <div class="problem-grid">
+                <div class="problem"><ion-icon name="close-outline"></ion-icon> Respondes manualmente a clientes</div>
+                <div class="problem"><ion-icon name="close-outline"></ion-icon> No tienes página web</div>
+                <div class="problem"><ion-icon name="close-outline"></ion-icon> No automatizas procesos</div>
+                <div class="problem"><ion-icon name="close-outline"></ion-icon> No tienes sistema de ventas</div>
+                <div class="problem"><ion-icon name="close-outline"></ion-icon> No aprovechas la tecnología</div>
+            </div>
+
+            <p class="solution">Nosotros lo solucionamos.</p>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <span class="section-tag">SERVICIOS</span>
+            <h2>Lo que hacemos por tu negocio</h2>
+
+            <div class="services-grid">
+
                 <div class="card">
+                    <div class="icon"><ion-icon name="git-compare-outline"></ion-icon></div>
                     <h3>Automatización para negocios</h3>
                     <p>Automatizamos tareas repetitivas para ahorrar tiempo y mejorar la atención al cliente.</p>
                     <ul>
@@ -77,7 +102,9 @@
                         <li>Procesos internos</li>
                     </ul>
                 </div>
+
                 <div class="card">
+                    <div class="icon"><ion-icon name="globe-outline"></ion-icon></div>
                     <h3>Diseño web profesional</h3>
                     <p>Creamos páginas web optimizadas para atraer clientes.</p>
                     <ul>
@@ -88,7 +115,9 @@
                         <li>Hosting y soporte</li>
                     </ul>
                 </div>
+
                 <div class="card">
+                    <div class="icon"><ion-icon name="phone-portrait-outline"></ion-icon></div>
                     <h3>Desarrollo de aplicaciones</h3>
                     <p>Creamos apps y sistemas a medida para tu negocio.</p>
                     <ul>
@@ -99,13 +128,17 @@
                         <li>Integraciones</li>
                     </ul>
                 </div>
+
             </div>
-        </section>
-        <section id="how-we-work">
-            <p class="title">Automatiza tu negocio y trabaja menos</p>
-            <div class="col">
-                <p>Implementamos soluciones digitales que permiten:</p>
-                <ul>
+        </div>
+    </section>
+
+    <section class="dark-section">
+        <div class="container dark-grid">
+
+            <div>
+                <h2>Automatiza tu negocio y <span>trabaja menos</span></h2>
+                <ul class="checks">
                     <li>Responder automáticamente clientes</li>
                     <li>Automatizar ventas</li>
                     <li>Gestionar citas</li>
@@ -113,43 +146,69 @@
                     <li>Mejorar la eficiencia</li>
                 </ul>
             </div>
-            <div class="col">
-                <h2>Cómo trabajamos</h2>
-                <p><span>01</span> Analizamos tu negocio</p>
-                <p><span>02</span> Diseñamos la solución digital</p>
-                <p><span>03</span> Implementamos y damos soporte</p>
+
+            <div class="steps">
+                <h3>Cómo trabajamos</h3>
+                <div class="step">
+                    <span>01</span> Analizamos tu negocio
+                </div>
+                <div class="step">
+                    <span>02</span> Diseñamos la solución digital
+                </div>
+                <div class="step">
+                    <span>03</span> Implementamos y damos soporte
+                </div>
             </div>
-        </section>
-        <section id="cta">
-            <p class="title">¿Listo para automatizar tu negocio?</p>
+
+        </div>
+
+        <div class="container cta">
+            <h3>¿Listo para automatizar tu negocio?</h3>
             <p>Solicita una asesoría gratuita</p>
-            <a href="" class="btn btn-primary">Escríbenos en WhatsApp</a>
-        </section>
-        <section id="about">
-            <h2>Sobre nosotros</h2>
-            <p class="title">Netbrion Soluciones Digitales</p>
-            <p>Somos una empresa enfocada en crear soluciones tecnológicas para negocios locales.<br>
-                Ayudamos a empresas a automatizar procesos, mejorar su presencia digital y optimizar su funcionamiento mediante tecnología actual.<br>
-                Trabajamos con negocios locales, empresas pequeñas y medianas que buscan digitalizarse y crecer.<br>
-                <b>Nuestro objetivo es ser una empresa útil que aporte soluciones reales a los negocios.</b></p>
-        </section>
-        <section id="contact">
-            <h2>Contacto</h2>
-            <p class="title">Hablemos de tu proyecto</p>
-            <div class="contact-form">
+            <a href="https://wa.me/523121985181?text=Hola%20quiero%20una%20auditor%C3%ADa%20para%20mi%20negocio.%20Vengo%20desde%20su%20sitio%20web.%F0%9F%96%90%EF%B8%8F"
+                target="_blank" class="btn btn-primary">Solicitar asesoría</a>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <span class="section-tag">SOBRE NOSOTROS</span>
+            <h2>Netbrion Soluciones Digitales</h2>
+
+            <p>Somos una empresa enfocada en crear soluciones tecnológicas para negocios locales.</p>
+            <p>Ayudamos a empresas a automatizar procesos, mejorar su presencia digital y optimizar su funcionamiento
+                mediante tecnología actual.</p>
+            <p>Trabajamos con negocios locales, empresas pequeñas y medianas que buscan digitalizarse y crecer.</p>
+
+            <strong>Nuestro objetivo es ser una empresa útil que aporte soluciones reales a los negocios.</strong>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <span class="section-tag">CONTACTO</span>
+            <h2>Hablemos de tu proyecto</h2>
+
+            <div class="contact-card">
                 <h3>Netbrion Soluciones Digitales</h3>
-                <p>Villa de Álvarez, Colima, México</p>
-                <p>312 198 5181</p>
-                <p>netbrion@netbrion.com</p>
-                <p>9:00 AM - 5:00 PM</p>
-                <a href="" class="btn btn-primary">Escríbenos en WhatsApp</a>
+                <p><ion-icon name="location-outline"></ion-icon> Villa de Álvarez, Colima, México</p>
+                <p><ion-icon name="call-outline"></ion-icon> 312 198 5181</p>
+                <p><ion-icon name="mail-outline"></ion-icon> netbrion@netbrion.com</p>
+                <p><ion-icon name="time-outline"></ion-icon> 9:00 AM - 5:00 PM</p>
+
+                <a href="https://wa.me/523121985181?text=Hola%20quiero%20una%20auditor%C3%ADa%20para%20mi%20negocio.%20Vengo%20desde%20su%20sitio%20web.%F0%9F%96%90%EF%B8%8F"
+                    target="_blank" class="btn btn-whatsapp full">Enviar WhatsApp</a>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p>© 2026 Netbrion Soluciones Digitales. Todos los derechos reservados.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        © 2026 Netbrion Soluciones Digitales. Todos los derechos reservados.
     </footer>
-    <h1>Netbrion Soluciones Digitales Mexico</h1>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
